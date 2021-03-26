@@ -22,9 +22,7 @@ class MyFile:
         except:
             raise MyFileError(f"Unknown error: \n\n {traceback.format_exc()}")
 
-
-
-    def read_line(self, n): 
+    def read_line(self, n):
         try:
             s = ''
             with open(self.filename, encoding=self.encoding) as file:
@@ -83,10 +81,3 @@ class MyFile:
             raise SetterError("Argument is not a file like type")
         else:
             self._file = new_file
-
-
-if __name__ == "__main__":
-    test_file = MyFile("hui.txt")
-    test_file.read_file()
-    #f = open("months_dates.txt")
-    #test_file.file = f
