@@ -1,0 +1,9 @@
+# Project exclude paths
+/analysed/
+/arch/
+/data/
+/parsed/
+/test/
+/month_dates_prefixes.json
+/months_dates.txt
+/months_dates_for_parsing.txt
